@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env/
+
+# Data (keep structure with .gitkeep)
+/data/raw/*
+!/data/raw/.gitkeep
+/data/processed/*
+!/data/processed/.gitkeep
+/data/splits/*
+!/data/splits/.gitkeep
+
+# Results and artifacts (keep structure with .gitkeep)
+/results/*
+!/results/.gitkeep
+!/results/tables/
+/results/tables/*
+!/results/tables/.gitkeep
+!/results/curves/
+/results/curves/*
+!/results/curves/.gitkeep
+!/results/artifacts/
+/results/artifacts/*
+!/results/artifacts/.gitkeep
+/plots/*
+!/plots/.gitkeep
+
+# Editor/OS
+.DS_Store
+.idea/
+.vscode/
