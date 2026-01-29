@@ -68,6 +68,9 @@ def _score_pairs(descriptors, similarity_func):
             scores.append(cosine_similarity(descriptors[i], descriptors[j]))
     return np.array(labels), np.array(scores)
 
+def _load_dataset(split, num_scans, seed):
+    return _generate_synthetic_dataset(num_scans, seed)
+
 def main():
     """Entry point for evaluation script."""
     parser = argparse.ArgumentParser(description="Run place recognition evaluation.")
