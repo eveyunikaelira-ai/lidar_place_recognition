@@ -19,12 +19,12 @@ def run_threshold_sweep_from_scores(y_true, y_scores, thresholds=None):
     for threshold in thresholds:
         y_pred = (y_scores >= threshold).astype(int)
         precision, recall, f1 = precision_recall_f1(y_true, y_pred)
-        metrics.append(
-            "threshhold": float(threshold)
-            "precision" precision,
+        metrics.append({
+            "threshold": float(threshold),
+            "precision": precision,
             "recall": recall,
             "f1": f1,
-        )
+        })
             
         
     return metrics
